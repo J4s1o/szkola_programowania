@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapisy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="shortcut icon" href="./images/Removal-677.png">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo"><img src="./images/logo2.png" alt=""></a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="menu">
+            <a href="index.html">Start</a>
+            <a href="kursy.html">Kursy</a>
+            <a href="zapisy.html">Zapisy</a>
+            <a href="onas.html">O nas</a>
+            <a href="blog.html">Blog</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+       
+    </header>
+    <section class="order"id="order">
+        <div class="heading">
+            <h1>Zapisz się bez zobowiązań, pierwsze zajęcia są zawsze darmowe </h1>
+            
+        </div>
+            <div class="row">
+                <div class="image">
+                    <img src="./images/contact-img.svg" alt="">
+                </div>
+                <form action="">
+                    <div class="inputBox">
+                        <select name="" id="kurs">
+                            <option value="" disabled hidden selected>wybierz kurs*</option>
+                            <option value="przedszkole">Programowanie dla najmłodszych przedszkole (4-6 lat)</option>
+                            <option value="podstawowka-1">Tworzenie gier komputerowych podstawówka (7-9 lat)</option>
+                            <option value="podstawowka-2">Tworzenie gier komputerowych podstawówka (10-13 lat)</option>
+                            <option value="python">Wstęp do Programowania w Pythonie (13-18 lat)</option>
+                            <option value="website">Tworzenie stron internetowych (10-13 lat)</option>
+                            <option value="c#">Wstęp do Programowania w C# (13-18 lat)</option>
+                        </select>
+                        <input type="email" placeholder="Nazwa szkoły">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Imię kursanta *">
+                        <input type="text" placeholder="Naziwsko kursanta *">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Imię opiekuna *">
+                        <input type="text" placeholder="Naziwsko opiekuna *">
+                    </div>
+                    <div class="inputBox">
+                        <input type="tel" placeholder="Numer telefonu (123456789) *">
+                        <input type="mail" placeholder="Adres e-mail *">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="wiadomość"></textarea>
+                    <label><input type="checkbox"  name="regulamin" > Zapoznałem się z <a href="regulamin.html">regulaminem</a> i akceptuje jego warunki</label> </br>
+                    <label><input type="checkbox"  name="polityka" >  Zgadzam się na przetwarzanie moich danych osobowych zgodnie z polityką prywatności dostępną na stronie</a></label> </br>
+                    <label><input type="checkbox"  name="marketing" > Wyrażam zgodę na otrzymywanie informacji marketingowych i 
+                        promocyjnych od "Juniorzyprogramowania" 
+                        dostarczanych w postaci wiadomości informacyjnych o nowościach i promocjach</label> </br>
+                    <p>Tutaj chce recaptcha</p>
+                    <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Lf5yzQcAAAAAC_RkKXQHaPwWUsH9ikdJAGt9bdB"></div>
+                    <button class="btn">Wyślij</button>
+
+                </form>
+            </div>
+            
+       </section>
+    
+       <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>O nas</h3>
+                <p>Jako założyciele szkoły programowania "Juniorzy Programowania" naszą misją jest zapewnienie każdemu
+                    dziecku możliwości nauki informatyki i programowania. Wszyscy chcemy dla naszych dzieci jak najlepiej,
+                    a jako rodzice z pasją tworzymy środowisko, w którym nasze dzieci mogą ciągle poszerzać swoje horyzonty
+                    i rozwijać się.
+                </p> 
+            </div>
+            <div class="box">
+                <h3>Szybkie linki</h3>
+                <a href="index.html">Start</a>
+                <a href="kursy.html">Kursy</a>
+                <a href="zapisy.html">Zapisy</a>
+                <a href="blog.html">Blog</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="regulamin.html">Regulamin</a>
+                <a href="polityka.html">Polityka prywatności</a>
+            </div>
+            <div class="box">
+                <h3>Obserwuj nas</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                
+            </div>
+            <div class="box">
+                <h3>Kontakt</h3>
+                <p> <a href="tel:+48123456789"><i class="fas fa-phone"></i> Jan Nowak - 123456789</a> </p>
+                    <p> <a href="mailto:kontakt@juniorzyprogramowania.pl?subject=Pytanie odnośnie zajęć programowania"> <i class="fas fa-envelope"></i> kontakt@juniorzyprogramowania.pl</a></p>
+                    <p> <i id="kontakt" class="fas fa-map-marker-alt"></i> &nbsp;Warszawa</p>
+            </div>
+        </div>
+
+        <div class="credit"> &copy; Juniorzy <span>Programowania</span> All Rights Reserved - 2021</div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        AOS.init({
+            delay:500
+        });
+    </script>
+    <script src="./js2.js"></script>
+</body>
+</html>

@@ -1,0 +1,814 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+
+    transition: all 0.2s ease-out;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    outline: none; border: none;
+
+}
+:root{
+    --blue:#0CAFFF;
+    --orange:#fb8c00;
+    --purple:#b803ff;
+  
+}
+body{
+    background-image:url("images/hexellence.png");
+}
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section{
+    padding: 2rem 9%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    padding:0rem 9%;
+    right: 0;top: 0;left: 0;
+    z-index: 1000;
+    background: #fff;
+}
+header nav a{
+    color: #333;
+    margin-right: 1.5rem;
+    font-size: 2rem;
+}
+header nav a:hover{
+    color: var(--blue);
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #666;
+    cursor: pointer;
+    display: none;
+}
+
+#home{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(76.34deg, #2980b9, 42.45%, rgba(109,213,250,0)92.49%), 
+    url(./images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+}
+#home .content{
+    margin-left: 1.5rem;
+}
+#home .content h1{
+    font-size: 4rem;
+    color: #fff;
+    margin-left: 0.5rem;
+}
+#home .content h2{
+    font-size: 3rem;
+    color: #fff;
+}
+#home .content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 0.5rem;
+}
+
+#home .content button{
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background-color: var(--blue);
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+#home .content button:hover{
+    background: #333;
+}
+#home .content .icons{
+    position: absolute;
+    bottom:10%;
+    width: 100%;
+    
+}
+#home .content .icons a{ 
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--green);
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #FFF;
+    transition: .4s;
+}
+#home .content .icons a:hover{
+    background: #333;
+    transform: rotate(360deg);
+    
+}
+
+
+
+.powody .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.powody .box-container .box{
+    flex: 1 1 30rem;
+    overflow: hidden;
+    background: #fff;
+    height: 40rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    max-width: 35rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+.powody .box-container .box img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.powody .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.powody .box-container .box .content p{
+    font-size: 1.3rem;
+    color: #666;
+    margin-top: 1rem;
+    text-transform: none;
+}
+.powody .box-container .box .content .jeden{
+    text-transform: none;
+    color:var(--purple); 
+    font-size: 2.1rem;
+}
+.powody .box-container .box .content .dwa{
+    text-transform: none;
+    color:var(--orange); 
+    font-size: 2.1rem;
+}
+.powody .box-container .box .content .trzy{
+    text-transform: none;
+    color:var(--blue); 
+    font-size: 2.1rem;
+}
+
+
+
+.powody .heading{
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    color: #333;
+}
+#kursy-2{
+	margin-top:15rem;
+}
+
+.kursy .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.kursy .box-container .filterDiv .content{
+    padding: 0 0.5rem;
+}
+
+.kursy .box-container .filterDiv img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.kursy .box-container a{
+    color: #333;
+}
+.kursy .box-container a:hover{
+    transform: scale(1.05);
+}
+.kursy .box-container .filterDiv span{
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    background: var(--blue);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.kursy .heading{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+.kursy .heading span{
+    color: var(--blue);
+}
+.kursy p{
+    text-transform: none;
+    font-size: 1.5rem;
+    color: #666;
+}
+.kursy #myBtnContainer{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.kursy #myBtnContainer .btn{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+.kursy #myBtnContainer  #all{
+    background: #ff1744;
+    color: #fff;
+}
+.kursy #myBtnContainer  #przedszkole{
+    background: #b803ff;
+    color: #fff;
+}
+
+.kursy #myBtnContainer #podstawowka{
+    background: #fb8c00;
+    color:#fff;
+}
+.kursy #myBtnContainer #siedziba{
+    background: #0CAFFF;
+    color:#fff;
+}
+.kursy #myBtnContainer .btn:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
+}
+
+.filterDiv { 
+    display: none; /* Hidden by default */
+    flex: 1 1 35rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #e7e7e7;
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+  }
+  .filterDiv img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+  .filterDiv span{
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    background: var(--blue);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: grid;
+  }
+  
+
+
+
+.warto .heading{
+    text-align: center;
+    text-transform: none;
+    color: #333;
+    margin-bottom: 2rem;
+}
+.warto .heading span{
+    color: var(--blue) ;
+}
+
+.warto .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.warto .box-container .box{
+    flex: 1 1 30rem;
+    text-align: center;
+    max-width: 40rem;
+    padding: 2rem;
+}
+.warto .box-container .box i{
+    font-size: 4rem;
+    align-items: center;
+    color: var(--blue);
+    margin-bottom: 2rem;
+}
+.warto .box-container .box .content h3{
+    text-transform: none;
+    color: #222;
+    font-size: 1.8rem;
+    min-height: 4rem;
+}
+.warto .box-container .box .content p{
+    color: #666;
+    font-size: 1.5rem;
+    text-transform: none;
+}
+.pytania .heading{
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+.pytania .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.pytania .box-container .box{
+    flex: 1 1 40rem;
+    text-align: center;
+    max-width: 40rem;
+    
+}
+.pytania .box-container .box h3{
+    background: var(--blue);
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-transform: none;
+    font-size: 1.8rem;
+    min-height: 6rem;
+    
+}
+.pytania .box-container .box p{
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.order{
+    margin-top: 15rem;
+}
+.order .heading h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #666;
+}
+.order .row{
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    gap: 1.5rem;
+}
+.order .row .image{
+    flex: 1 1 30rem;
+}
+
+.order .row form{
+    flex: 1 1 50rem;
+    padding: 2rem;
+}
+.order .row form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.order .row form .inputBox input, .order .row form textarea,.order .row form .inputBox select{
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-transform: none;
+    width: 49%;
+    color: #666;
+}
+
+
+
+.order .row form textarea{
+    width: 100%;
+    resize: none;
+    height: 15rem;
+}
+.order .row form .btn{
+    cursor: pointer;
+    background: var(--blue);
+    padding: 1rem 3rem;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
+.order .row form .btn:hover{
+    background: #666;
+}
+.order .row form label{
+    font-size: 1.5rem;
+    color: #666;
+}
+
+#testimonial{
+    background: #333;
+    min-height: 100vh;
+    min-width: 90vw;
+    
+    display: grid;
+}
+#testimonial .box-container{
+    width: 90%;
+}
+
+#testimonial .box-container .box{
+    background: #fff;
+    display: flex;
+    max-width: 60rem;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5rem;
+    padding-left: 6rem;
+    clear: both;
+    margin: 2rem;
+    border-radius: 0.5rem;
+}
+#testimonial .box-container .box:nth-child(even){
+    float: right;
+}
+#testimonial .box-container .box img{
+    position: absolute;
+    top: 50%;left: -9%;
+    transform: translateY(-50%);
+    width: 10rem;
+    height: 10rem;
+    border: 0.5rem solid var(--blue);
+    border-radius: 50%;
+}
+#testimonial .box-container .box .info h2{
+    margin-top: -2.5rem;
+    margin: 2rem;
+    color: var(--blue);
+    text-align: right;
+}
+#testimonial .heading{
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: #333;
+    text-align: center;
+    color: #fff;
+}
+#testimonial .box-container .box .info p{
+    font-size: 1.6rem;
+    color: #333;
+    padding: 1rem;
+}
+#testimonial .box-container .box .info i{
+    color: var(--blue);
+    padding: 1rem;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+.footer .box-container .box{
+    flex: 1 1 20rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--blue);
+    padding: .7rem 0;
+}
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+}
+.footer .box-container .box a{
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    display: block;
+    color: #666;
+}
+.footer .box-container .box a:hover{
+    color: var(--blue);
+}
+
+
+.footer .box-container .box i{
+    color:var(--blue);
+    padding-right: 0.5rem;
+}
+.footer .credit{
+    font-size: 2rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: 0.1rem solid rgba(0, 0, 0, .2);
+    margin-top: 1rem;
+    color:#666;
+}
+.footer .credit span{
+    color: var(--blue);
+}
+
+.onas, .blog,.contact{
+    margin-top: 15rem;
+}
+
+
+.contact .content{
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+}
+.contact .content a{
+    color: var(--blue);
+}
+.contact .content h1,h2,h3{
+    padding: 0.5rem;
+}
+.contact form{
+    text-align: center;
+}
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .inputBox input, .contact form .inputBox select{
+    width:49%;
+    height: 4rem;
+    padding: 0rem 1rem;
+    margin: 1rem 0rem;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+.contact form textarea{
+    width: 100%;
+    font-size: 1.5rem;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+}
+.contact form input[type="submit"]{
+   margin-top: 2rem;
+   background: var(--blue);
+   padding: 1rem 3rem;
+   color: #fff;
+   border-radius: 0.5rem;
+   font-size: 2rem;
+    
+}
+.contact form input[type="submit"]:hover{
+    background: #333;
+}
+
+.blog .heading{
+    font-size: 3rem;
+    text-align: center;
+}
+.blog .container .box{
+    width: 35rem;
+    background: #fff;
+    overflow: hidden;
+    padding: 2rem; 
+    border: 0.1rem solid rgba(0, 0, 0,0.1);
+    margin: 1rem ;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0,0.1);
+}
+
+.blog .container .box img{
+    height: 20rem;
+    width: 100%;
+    background: #f8f8fe;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.blog .container .box h3{
+    font-size: 2rem;
+    font-weight: normal
+}
+
+.blog .container .box .info{
+    margin-top: 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0,0.1);
+    padding-top: 2rem;
+    justify-content: space-between;
+    display: flex;
+}
+.blog .container .box .info a{
+    font-size: 1.3rem;
+    color: #333;
+}
+.blog .container .box .info a i{
+    padding-right: 0.6rem;
+}
+.blog .container .box .info a:hover{
+    color: var(--blue);
+}
+.blog .link-btn{
+    font-size: 2rem;
+    padding: 0.5rem 3rem;
+    background: var(--blue);
+    border-radius: 5rem;
+    color: #fff;
+}
+.blog .link-btn:hover{
+    background: #333;
+    color: #fff;
+}
+
+
+.onas .container h1{
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+.onas .container h2{
+    color: #333;
+    font-size: 2.5rem;
+    margin: 2rem 0rem;
+    text-align: center;
+}
+.onas .container h3{
+    color: var(--blue);
+    font-size: 2rem;
+}
+.onas .container .box {
+    font-size: 1.7rem;
+    color: #666;
+}
+.title-course{
+    margin-top: 15rem;
+}
+.title-course .image img{
+    border-radius: 0.5rem;
+
+}
+.title-course .content{
+    padding: 1rem;
+}
+.title-course .content h2{
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.title-course .content h3{
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+.title-course .content h4{
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+.informacje h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.informacje p{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+.przycisk-zapis{
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background-color: var(--blue);
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+.przycisk-zapis:hover{
+    background: #333;
+}
+.title-course img{
+    margin-top: 2rem;
+}
+
+@media(max-width:1100px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 0 2rem;
+    }
+}
+@media(max-width:880px){
+   
+    header .menu{
+        position: absolute;
+        top: 100%;left:0;right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0,0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+    }
+    header .menu.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+    }
+    header .menu a{
+        flex-wrap: wrap;
+        display: block;
+        text-align: center;
+        padding: 2rem;
+        font-size: 3rem;
+
+    }
+    header #menu-bar{
+        display: initial;
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    #home{
+        background: linear-gradient(rgba(41,128,185,0.3),rgba(109,213,250,0.3)),
+        url(./images/kids_learn.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    #home .content{
+        text-shadow: .1rem .1rem .3rem #333;
+    }
+   
+}
+@media(max-width:600px){
+    
+    header .logo img{
+        width: 90%;
+        
+    }
+}
+@media(max-width:500px){
+    #testimonial .box-container .box{
+        padding: 0.5rem;
+        margin-top: 13rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #testimonial .box-container .box img{
+        width: 15rem;
+        height: 15rem;
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #testimonial .box-container .box .info{
+        text-align: center;
+    }
+    #testimonial .box-container .box .info p{
+        padding-top: 9rem;
+    }
+    #testimonial .box-container .box .info h2{
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    #testimonial .box-container .box:nth-child(even){
+        float: none;
+    }
+}
+@media(max-width:400px){
+    html{
+        font-size: 55%;
+    }
+    
+}

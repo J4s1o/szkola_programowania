@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapisy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="shortcut icon" href="./images/Removal-677.png">
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo"><img src="./images/logo2.png" alt=""></a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="menu">
+            <a href="index.html">Start</a>
+            <a href="kursy.html">Kursy</a>
+            <a href="zapisy.html">Zapisy</a>
+            <a href="onas.html">O nas</a>
+            <a href="blog.html">Blog</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+       
+    </header>
+    <section class="kursy" id="kursy-2">
+        <h1 class="heading">Semestralne kursy<span> programowania</span></h1>
+            <p>Zapraszamy na nasze stacjonarne kursy programowania! Każdy z kursów jest dopasowany
+                do odpowiedniej grupy wiekowej, dzięki czemu efekty widoczne są od razu po pierwszej
+                lekcji. Zajęcia są prowadzone przez wykwalifikowanych programistów, którzy wiedzą jak w 
+                prosty, a zarazem atrakcyjny sposób tłumaczyć omawiane zagadnienia. Nasza oferta obejmuję
+                kursy dla dzieci w wieku od 4 do 13 lat oraz lekcje dla troszkę starszych uczniów. Nasi
+                najmłodsi kursanci w wieku od 4 do 6 lat będą rozwijać logikę, abstrakcyjne myślenie, wyobraźnie oraz pamięć. 
+                Nieco starsi uczniowie w wieku od 7 do 13 lat będą rozwijać się w językach Python, Java, HTML, CSS, tworzeniu
+                gier w Minecrafcie, Kodu oraz Scratchu. Młodzież w wieku od 13 do 18 lat skupi się na rozwijaniu nieco bardziej
+                zaawansowanych obszarach programowania, tworzenie sztucznej inteligencji w Pythonie, budowanie stron internetowych.</p>
+        
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')" id="all"> Wszystkie</button>
+            <button class="btn" onclick="filterSelection('przedszkole')" id="przedszkole"> Przedszkole</button>
+            <button class="btn" onclick="filterSelection('podstawowka')" id="podstawowka">Szkoła podstawowa</button>
+            <button class="btn" onclick="filterSelection('siedziba')" id="siedziba">Warszawa Ursynów- siedziba</button>
+        </div>
+
+        <div class="box-container">
+            <a href="programowanie-przedszkole.html">
+                <div class="filterDiv przedszkole">
+                    <span id="span-1">wiek 4-6</span>
+                    <img src="./images/back-1.png" alt="">
+                    <div class="content">
+                        <h3>Programowanie dla najmłodszych (Scratch Junior)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="zaawansowane-tworzenie-gier.html">
+                <div class="filterDiv podstawowka">
+                    <span id="podstawowka">wiek 10-13</span>
+                    <img src="./images/back-3.jpg" alt="">
+                    <div class="content">
+                        <h3>Tworzenie gier komputerowych (Minecraft, Python, Roblox, App Inventor)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="podstawy-tworzenia-gier.html">
+                <div class="filterDiv podstawowka">
+                    <span id="podstawowka">wiek 7-9</span>
+                    <img src="./images/back2.jpg" alt="">
+                    <div class="content">
+                        <h3>Tworzenia gier komputerowych (Scratch, Kodu, Minecraft, Python, Gamefroot)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="programowanie-python.html">
+            <div class="filterDiv siedziba">
+                <span>wiek 13-18</span>
+                <img src="./images/python.jpg" alt="">
+                <div class="content">
+                    <h3>Wstęp do Programowania w Pythonie (Visual Studio Code)
+
+                    </h3>
+                </div>
+            </div>
+            </a>
+            <a href="strony-internetowe.html">
+                <div class="filterDiv siedziba">
+                    <span>wiek 10-13</span>
+                    <img src="./images/website.png" alt="">
+                    <div class="content">
+                        <h3>Tworzenie stron internetowych (HTML, CSS, JS)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="programowanie-c.html">
+                <div class="filterDiv podstawowka">
+                    <span>wiek 13-18</span>
+                    <img src="./images/cshapr.jpg" alt="">
+                    <div class="content">
+                        <h3>Wstęp do Programowania w C# (Visual Studio)</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>O nas</h3>
+                <p>Jako założyciele szkoły programowania "Juniorzy Programowania" naszą misją jest zapewnienie każdemu
+                    dziecku możliwości nauki informatyki i programowania. Wszyscy chcemy dla naszych dzieci jak najlepiej,
+                    a jako rodzice z pasją tworzymy środowisko, w którym nasze dzieci mogą ciągle poszerzać swoje horyzonty
+                    i rozwijać się.
+                </p> 
+            </div>
+            <div class="box">
+                <h3>Szybkie linki</h3>
+                <a href="index.html">Start</a>
+                <a href="kursy.html">Kursy</a>
+                <a href="zapisy.html">Zapisy</a>
+                <a href="blog.html">Blog</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="regulamin.html">Regulamin</a>
+                <a href="polityka.html">Polityka prywatności</a>
+            </div>
+            <div class="box">
+                <h3>Obserwuj nas</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                
+            </div>
+            <div class="box">
+                <h3>Kontakt</h3>
+                 <p> <a href="tel:+48123456789"><i class="fas fa-phone"></i> Jan Nowak - 123456789</a> </p>
+                    <p> <a href="mailto:kontakt@juniorzyprogramowania.pl?subject=Pytanie odnośnie zajęć programowania"> <i class="fas fa-envelope"></i> kontakt@juniorzyprogramowania.pl</a></p>
+                    <p> <i id="kontakt" class="fas fa-map-marker-alt"></i> &nbsp;Warszawa</p>
+            </div>
+        </div>
+
+        <div class="credit"> &copy; Juniorzy <span>Programowania</span> All Rights Reserved - 2021</div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="./js.js"></script>
+</body>
+</html>

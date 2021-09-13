@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juniorzy Programowania</title>
+    <meta name="Description" content="Juniorzy Programowania to szkoła, w której dzieci i młodzież łączą naukę z zabawą. Zapisz swoje dziecko na stacjonarne kursy programowania w Warszawie!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="shortcut icon" href="./images/Removal-677.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo"><img src="./images/logo2.png" alt=""></a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="menu">
+            <a href="index.html">Start</a>
+            <a href="kursy.html">Kursy</a>
+            <a href="zapisy.html">Zapisy</a>
+            <a href="onas.html">O nas</a>
+            <a href="blog.html">Blog</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+       
+    </header>
+
+  <!--home section-->
+  <section id="home" class="container-fluid">
+    <div class="row align-items-center min-vh-100 content">
+        <div class="col-md-8 ml-md-5 text-md-left">
+            <h1>Szkoła programowania dla dzieci i młodzieży</h1>
+            <h2>Uwolnij potencjał swojego dziecka dzięki prawdziwej instrukcji kodowania</h2>
+
+            <a href="zapisy.html" data-aos="zoom-in"><button >Zapisz już dziś >></button></a>
+            <p>Zapisz swoje dziecko bez zobowiązań, pierwsze zajęcia są zawsze darmowe!</p>
+            
+        </div>
+    </div>
+</section>
+<!--end home section-->
+    <!--
+    <section class="start">
+        <div class="content">
+            <h2>Szkoła programowania dla dzieci i młodzieży</h2>
+            <h3>Najszybszy sposób na nadanie dziecku oraz nastolatkowi umiejętności XXI wieku</h3>
+            <h1>Uwolnij ich potencjał dzięki prawdziwej instrukcji kodowania</h1>
+            <a href="#course"><button>Sprawdź nasze kursy >></button></a>
+            <p>Zapisz się bez zobowiązań, pierwsze zajęcia są zawsze darmowe!</p>
+        </div>
+    </section>
+    end home section-->
+    <section class="powody">
+        <h1 class="heading">Trzy powody, aby już dziś zapisać swoje dziecko na pierwsze darmowe zajęcia!</h1>
+        <div class="box-container">
+            <div class="box"data-aos="fade-right">
+                <img src="./images/aa.jpg" alt="">
+                <div class="content">
+                    <h3 class="jeden">Przygotuj swoje dziecko na erę cyfrową!</h3>
+                    <p>Nasi uczniowie uczą się profesjonalnych języków programowania, 
+                        takich jak Python, JavaScript i C#, korzystając z tych samych narzędzi,
+                        które są używane w firmach takich jak Google, Facebook i Intel.</p>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <img src="./images/mentor.jpg" alt="">
+                <div class="content">
+                    <h3 class="dwa">Daj dziecku mentorów, których
+                        potrzebują, aby odnieść sukces!</h3>
+                    <p>Nasi nauczyciele to doświadczeni programiści, projektanci i edukatorzy
+                        oprogramowania komputerowego, którzy pełnią jednocześnie rolę mentorów, sprawiając,
+                        że kodowanie jest zabawne i wciągające dla dzieci.</p>
+                </div>
+            </div>
+            <div class="box"data-aos="fade-left" >
+                <img src="./images/zabawa.jfif" alt="">
+                <div class="content">
+                    <h3 class="trzy">Nauka poprzez ulubioną grę twojego dziecka!</h3>
+                    <p>Nasi uczniowie tworzą profesjonalne gry i oprogramowania oraz doskonole się 
+                        przy tym bawią.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="kursy">
+        <h1 class="heading">Semestralne kursy<span> programowania</span></h1>
+            <p>Zapraszamy na nasze stacjonarne kursy programowania! Każdy z kursów jest dopasowany
+                do odpowiedniej grupy wiekowej, dzięki czemu efekty widoczne są od razu po pierwszej
+                lekcji. Zajęcia są prowadzone przez wykwalifikowanych programistów, którzy wiedzą jak w 
+                prosty, a zarazem atrakcyjny sposób tłumaczyć omawiane zagadnienia. Nasza oferta obejmuję
+                kursy dla dzieci w wieku od 4 do 13 lat oraz lekcje dla troszkę starszych uczniów. Nasi
+                najmłodsi kursanci w wieku od 4 do 6 lat będą rozwijać logikę, abstrakcyjne myślenie, wyobraźnie oraz pamięć. 
+                Nieco starsi uczniowie w wieku od 7 do 13 lat będą rozwijać się w językach Python, Java, HTML, CSS, tworzeniu
+                gier w Minecrafcie, Kodu oraz Scratchu. Młodzież w wieku od 13 do 18 lat skupi się na rozwijaniu nieco bardziej
+                zaawansowanych obszarach programowania, tworzenie sztucznej inteligencji w Pythonie, budowanie stron internetowych.</p>
+        
+
+        <div id="myBtnContainer"data-aos="fade-up" >
+            <button class="btn active" onclick="filterSelection('all')" id="all"> Wszystkie</button>
+            <button class="btn" onclick="filterSelection('przedszkole')" id="przedszkole"> Przedszkole</button>
+            <button class="btn" onclick="filterSelection('podstawowka')" id="podstawowka">Szkoła podstawowa</button>
+            <button class="btn" onclick="filterSelection('siedziba')" id="siedziba">Warszawa Ursynów- siedziba</button>
+        </div>
+
+        <div class="box-container">
+            <a href="programowanie-przedszkole.html">
+                <div class="filterDiv przedszkole">
+                    <span id="span-1">wiek 4-6</span>
+                    <img src="./images/back-1.png" alt="">
+                    <div class="content">
+                        <h3>Programowanie dla najmłodszych (Scratch Junior)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="zaawansowane-tworzenie-gier.html">
+                <div class="filterDiv podstawowka">
+                    <span id="podstawowka">wiek 10-13</span>
+                    <img src="./images/back-3.jpg" alt="">
+                    <div class="content">
+                        <h3>Tworzenie gier komputerowych (Minecraft, Python, Roblox, App Inventor)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="podstawy-tworzenia-gier.html">
+                <div class="filterDiv podstawowka">
+                    <span id="podstawowka">wiek 7-9</span>
+                    <img src="./images/back2.jpg" alt="">
+                    <div class="content">
+                        <h3>Tworzenia gier komputerowych (Scratch, Kodu, Minecraft, Python, Gamefroot)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="programowanie-python.html">
+            <div class="filterDiv siedziba">
+                <span>wiek 13-18</span>
+                <img src="./images/python.jpg" alt="">
+                <div class="content">
+                    <h3>Wstęp do Programowania w Pythonie (Visual Studio Code)
+
+                    </h3>
+                </div>
+            </div>
+            </a>
+            <a href="strony-internetowe.html">
+                <div class="filterDiv siedziba">
+                    <span>wiek 10-13</span>
+                    <img src="./images/website.png" alt="">
+                    <div class="content">
+                        <h3>Tworzenie stron internetowych (HTML, CSS, JS)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="programowanie-c.html">
+                <div class="filterDiv podstawowka">
+                    <span>wiek 13-18</span>
+                    <img src="./images/cshapr.jpg" alt="">
+                    <div class="content">
+                        <h3>Wstęp do Programowania w C# (Visual Studio)</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="warto">
+        <h1 class="heading">Dlaczego Juniorzy <span>Programowania</span>  to właściwy wybór </h1>
+        <div class="box-container">
+            <div class="box" data-aos="flip-left">
+                <i class="fas fa-keyboard"></i>
+                <div class="content">
+                    <h3>Twój komputer może więcej</h3>
+                    <p>W szkole Juniorzy Programowania czas przed ekranem ma swój określony cel. Nasze podejście sprzyja kreatywności i 
+                        logicznemu myśleniu. Uczestnicy samodzielnie pokonują wyzwania, ucząc się poprzez działanie.</p>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-down">
+                <i class="fas fa-user-graduate"></i>
+                <div class="content">
+                    <h3>Przyszłość z nieskończonymi możliwościami</h3>
+                    <p>Umiejętności programowania wkrótce staną się jednymi z najbardziej pożądanych umiejętności w świecie biznesu.
+                        Nasz program pozwoli Ci już dziś otworzyć drzwi do sukcesu Twojego dziecka w przyszłości.</p>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-right">
+                <i  class="far fa-laugh-beam"></i>
+                <div class="content">
+                    <h3>Dobra zabawa</h3>
+                    <p>Programowanie zapewnia dziecią i młodzieży nie tylko dużą ilość wiedzy i umiejętności, które są potrzebne w dalszym etapie nauki, ale również 
+                            doskonałą zabawę.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <h1 class="heading">Co mówią o nas rodzice ?</h1>
+        <div class="box-container">
+            <div class="box" data-aos="flip-left">
+                <img src="./images/man.png" alt="">
+                <div class="info">
+                    <p><i class="fas fa-quote-left"></i> Fantastyczne doświadczenie! Moja córka uwielbia chodzić na zajęcia z programowania. Każdego dnia po
+                        zakończeniu zajęć opowiada z wielką fascynacją co udało jej się zrobić.  <i class="fas fa-quote-right"></i></p>
+                    <h2>Tata Oli</h2>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-right">
+                <img src="./images/woman.png" alt="">
+                <div class="info">
+                    <p><i class="fas fa-quote-left"></i> Zdecydowanie polecam zajęcia, ponieważ Kubuś zawsze wychodzi z zajęć bardzo szczęśliwy. Teraz gdy moje dziecko bawi się 
+                        grami na telefonie, myśli o tym jak została ona stworzona.<i class="fas fa-quote-right"></i></p>
+                    <h2>Mama Kuby</h2>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <img src="./images/man.png" alt="">
+                <div class="info">
+                    <p><i class="fas fa-quote-left"></i> Mój syn uwielbia zajęcia z programowania i naprawdę dużo się nauczył. Byłem pod wrażeniem tego, ile faktycznie
+                        zrobili kodowania w Pythonie.<i class="fas fa-quote-right"></i></p>
+                    <h2>Tata Antka</h2>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-right">
+                <img src="./images/woman.png" alt="">
+                <div class="info">
+                    <p><i class="fas fa-quote-left"></i> Zajęcia są wspaniałe! Nasza Paulinka chętnie chodzi na zajęcia z programowania, nie traktuje ich jako obowiązek,
+                        tylko zabawę. Cała grupa ma super kontakt z prowadzącym. <i class="fas fa-quote-right"></i></p>
+                    <h2>Mama Pauliny</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section class="pytania">
+        <h1 class="heading">Pytania i odpowiedzi
+
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <h3>Dlaczego moje dziecko powinno spróbować kursów programowania?</h3>
+                <p>Dzieci uczące się programowania otrzymują strategiczny i logiczny sposób myślenia o otaczającym ich świecie. 
+                    Niezależnie od tego, czy chodzi o zrozumienie, jak działają złożone systemy, takie jak gospodarka, czy podejmowanie 
+                    codziennych decyzji, programowanie uczy dzieci nie tylko rozwiązywania problemów, ale także wyrażania siebie. Żyjemy 
+                    teraz w cyfrowym krajobrazie, w którym kładzie się silny nacisk na znaczenie technologii cyfrowej. Dzieci, 
+                    które uczą się programowania, dadzą sobie najlepszą szansę na rozwój poznawczy, rozwój osobisty i przyszłe ścieżki kariery.</p>
+            </div>
+            <div class="box">
+                <h3>Co jest potrzebne podczas zajęć?</h3>
+                <p>Zapewniamy cały niezbędny sprzęt, w tym laptopy dla każdego ucznia. Jedyne co jest potrzebne, to zapał i chęć do nauki. </p>
+            </div>
+            <div class="box">
+                <h3>Dlaczego moje dziecko powinno spróbować kursów programowania?</h3>
+                <p>Dzieci uczące się programowania otrzymują strategiczny i logiczny sposób myślenia o otaczającym ich świecie. 
+                    Niezależnie od tego, czy chodzi o zrozumienie, jak działają złożone systemy, takie jak gospodarka, czy podejmowanie 
+                    codziennych decyzji, programowanie uczy dzieci nie tylko rozwiązywan
+                    które uczą się programowania, dadzą sobie najlepszą szansę na rozwój poznawczy, rozwój osobisty i przyszłe ścieżki kariery.</p>
+            </div>
+            <div class="box">
+                <h3>Dlaczego moje dziecko powinno spróbować kursów programowania?</h3>
+                <p>Dzieci uczące się programowania otrzymują strategiczny i logiczny sposób myślenia o otaczającym ich świecie. 
+                    Niezależnie od tego, czy chodzi o zrozumienie, jak działają złożone systemy, takie jak gospodarka, czy podejmowanie 
+                    codziennych decyzji, programowanie uczy dzieci nie tylko rozwiązywania problemów, ale także wyrażania siebie. Żyjemy 
+                    teraz w cyfrowym krajobrazie, w którym kładzie się silny nacisk na znaczenie technologii cyfrowej. Dzieci, 
+                    które uczą się programowania, dadzą sobie najlepszą szansę na rozwój poznawczy, rozwój osobisty i przyszłe ścieżki kariery.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    -->
+    <section class="footer" id="footer-2">
+        <div class="box-container">
+            <div class="box" data-aos="flip-left">
+                <h3>O nas</h3>
+                <p>Jako założyciele szkoły programowania "Juniorzy Programowania" naszą misją jest zapewnienie każdemu
+                    dziecku możliwości nauki informatyki i programowania. Wszyscy chcemy dla naszych dzieci jak najlepiej,
+                    a jako rodzice z pasją tworzymy środowisko, w którym nasze dzieci mogą ciągle poszerzać swoje horyzonty
+                    i rozwijać się.
+                </p> 
+            </div>
+            <div class="box"data-aos="fade-down">
+                <h3>Szybkie linki</h3>
+                <a href="index.html">Start</a>
+                <a href="kursy.html">Kursy</a>
+                <a href="zapisy.html">Zapisy</a>
+                <a href="blog.html">Blog</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="regulamin.html">Regulamin</a>
+                <a href="polityka.html">Polityka prywatności</a>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <h3>Obserwuj nas</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                
+            </div>
+            <div class="box" data-aos="flip-right">
+                <h3>Kontakt</h3>
+                 <p> <a href="tel:+48123456789"><i class="fas fa-phone"></i> Jan Nowak - 123456789</a> </p>
+                    <p> <a href="mailto:kontakt@juniorzyprogramowania.pl?subject=Pytanie odnośnie zajęć programowania"> <i class="fas fa-envelope"></i> kontakt@juniorzyprogramowania.pl</a></p>
+                    <p> <i id="kontakt" class="fas fa-map-marker-alt"></i> &nbsp;Warszawa</p>
+            </div>
+        </div>
+
+        <div class="credit"> &copy; Juniorzy <span>Programowania</span> All Rights Reserved - 2021</div>
+    </section>
+    
+   
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init({
+            duration:1000,
+            delay:400
+        });
+    </script>
+    <script src="./js.js"></script>
+</body>
+</html>
